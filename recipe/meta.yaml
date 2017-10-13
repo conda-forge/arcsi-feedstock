@@ -30,7 +30,7 @@ requirements:
   run:
     - python
     - py6s
-    - gdal 2.2.*
+    - gdal 2.1.*
     - rsgislib 3.3.*
     - rios
     - scikit-learn
