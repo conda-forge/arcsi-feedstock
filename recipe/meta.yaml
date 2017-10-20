@@ -1,4 +1,4 @@
-{% set version = "1.4.2" %}
+{% set version = "2.2.24" %}
 
 package:
   name: arcsi
@@ -7,7 +7,7 @@ package:
 source:
   fn: arcsi-{{ version }}.tar.gz
   url: https://bitbucket.org/petebunting/arcsi/downloads/arcsi-{{ version }}.tar.gz
-  sha256: 408d73249c6fc3130abe0b86a94dcb2854ef17f8071b550c10d5ab9a7a1f5831
+  sha256: d92c3023923a2e9c9235d92307a560e519095748c8e7700dc7956510f74b40fe
 
 build:
   number: 0
@@ -30,8 +30,8 @@ requirements:
   run:
     - python
     - py6s
-    - gdal 2.2.*
-    - rsgislib
+    - gdal 2.1.*
+    - rsgislib 3.3.*
     - rios
     - scikit-learn
     - h5py
