@@ -10,7 +10,7 @@ source:
   sha256: d92c3023923a2e9c9235d92307a560e519095748c8e7700dc7956510f74b40fe
 
 build:
-  number: 0
+  number: 1
   # Windows recipe includes .bat file copy so use bld.bat
   script: python setup.py install  # [unix]
   # rsgislib not available due to mpfr only supporting vc14 and above
@@ -30,8 +30,7 @@ requirements:
   run:
     - python
     - py6s
-    - gdal 2.1.*
-    - rsgislib 3.3.*
+    - rsgislib 3.4.*
     - rios
     - scikit-learn
     - h5py
