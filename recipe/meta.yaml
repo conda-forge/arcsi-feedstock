@@ -10,7 +10,7 @@ source:
   sha256: d92c3023923a2e9c9235d92307a560e519095748c8e7700dc7956510f74b40fe
 
 build:
-  number: 1
+  number: 2
   # Windows recipe includes .bat file copy so use bld.bat
   script: python setup.py install  # [unix]
   # rsgislib not available due to mpfr only supporting vc14 and above
