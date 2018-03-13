@@ -1,2 +1,2 @@
 @echo off
-python "%~dp0\arcsi.py" %*
+python "%~dp0\arcsi-script.py" %*
