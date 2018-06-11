@@ -1,7 +1,7 @@
 About arcsi
 ===========
 
-Home: http://rsgislib.org/arcsi
+Home: https://www.arcsi.remotesensing.info
 
 Package license: GPLv3
 
