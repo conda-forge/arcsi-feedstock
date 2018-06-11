@@ -34,6 +34,7 @@ requirements:
     - rsgislib 3.5.*
     - rios
     - scikit-learn
+    - python-fmask
     - h5py
     - vc 9  # [win and py27]
     - vc 10  # [win and py34]
