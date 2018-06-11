@@ -1,4 +1,4 @@
-{% set version = "2.2.24" %}
+{% set version = "3.1.6" %}
 
 package:
   name: arcsi
@@ -7,7 +7,7 @@ package:
 source:
   fn: arcsi-{{ version }}.tar.gz
   url: https://bitbucket.org/petebunting/arcsi/downloads/arcsi-{{ version }}.tar.gz
-  sha256: d92c3023923a2e9c9235d92307a560e519095748c8e7700dc7956510f74b40fe
+  sha256: 5a53e5e9b1769c41d28e2a6644d4add68c1c922d93a882bd69fa457a47cfb5d5
 
 build:
   number: 2
@@ -31,7 +31,7 @@ requirements:
     - python
     - py6s
     - gdal 2.2.*
-    - rsgislib 3.4.*
+    - rsgislib 3.5.*
     - rios
     - scikit-learn
     - h5py
@@ -46,7 +46,7 @@ test:
     - arcsi.py -h
 
 about:
-  home: http://rsgislib.org/arcsi
+  home: https://www.arcsi.remotesensing.info
   license: GPLv3
   license_file: LICENSE.txt
   summary: Software for the Atmospheric and Radiometric Correction of Satellite Imagery (ARCSI)
