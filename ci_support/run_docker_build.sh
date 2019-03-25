@@ -52,8 +52,11 @@ set -x
 export PYTHONUNBUFFERED=1
 
 echo "$config" > ~/.condarc
+
+# This section is out of conda-smithy since long.
+# See https://github.com/conda-forge/conda-smithy/pull/998/commits/f4b755b83b36addb5e6db095a3590d2ce777e43b
 # A lock sometimes occurs with incomplete builds. The lock file is stored in build_artefacts.
-conda clean --lock
+# conda clean --lock
 
 conda install --yes --quiet conda-forge-build-setup
 source run_conda_forge_build_setup
