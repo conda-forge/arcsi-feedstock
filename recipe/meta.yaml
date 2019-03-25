@@ -30,8 +30,8 @@ requirements:
   run:
     - python
     - py6s
-    - gdal 2.2.4
-    - rsgislib 3.5.*
+    - gdal
+    - rsgislib 3.6.*
     - rios
     - scikit-learn
     - python-fmask
