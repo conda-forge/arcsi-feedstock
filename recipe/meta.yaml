@@ -17,8 +17,8 @@ build:
   skip: True  # [win and py<35]
 
 requirements:
-  host:
-    - python
+  build:
+    - python {{python}}
   run:
     - python
     - py6s
