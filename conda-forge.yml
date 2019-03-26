@@ -4,6 +4,3 @@ travis:
 appveyor:
   secure:
     BINSTAR_TOKEN: tumuXLL8PU75WMnRDemRy02ruEq2RpNxeK3dz0MjFssnosPm2v4EFjfNB4PTotA1
-
-# Temporarily python 3.7 not supported due to unsupported dependency. (Py6s depends on pysolar 0.6)
-max_py_ver: '36'
