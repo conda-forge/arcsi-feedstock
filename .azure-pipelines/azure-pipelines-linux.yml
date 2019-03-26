@@ -13,9 +13,6 @@ jobs:
       linux_python2.7:
         CONFIG: linux_python2.7
         UPLOAD_PACKAGES: True
-      linux_python3.5:
-        CONFIG: linux_python3.5
-        UPLOAD_PACKAGES: True
       linux_python3.6:
         CONFIG: linux_python3.6
         UPLOAD_PACKAGES: True
