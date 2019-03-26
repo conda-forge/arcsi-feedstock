@@ -10,23 +10,15 @@ source:
   sha256: 5a53e5e9b1769c41d28e2a6644d4add68c1c922d93a882bd69fa457a47cfb5d5
 
 build:
-  number: 1
+  number: 2
   # Windows recipe includes .bat file copy so use bld.bat
   script: python setup.py install  # [unix]
   # rsgislib not available due to mpfr only supporting vc14 and above
   skip: True  # [win and py<35]
-  features:
-    - vc9  # [win and py27]
-    - vc10  # [win and py34]
-    - vc14  # [win and (py35 or py36)]
 
 requirements:
-  build:
+  host:
     - python
-    - vc 9  # [win and py27]
-    - vc 10  # [win and py34]
-    - vc 14  # [win and (py35 or py36)]
-
   run:
     - python
     - py6s
@@ -36,9 +28,6 @@ requirements:
     - scikit-learn
     - python-fmask
     - h5py
-    - vc 9  # [win and py27]
-    - vc 10  # [win and py34]
-    - vc 14  # [win and (py35 or py36)]
 
 test:
   imports:
