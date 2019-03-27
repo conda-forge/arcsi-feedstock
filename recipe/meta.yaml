@@ -14,13 +14,13 @@ build:
   # Windows recipe includes .bat file copy so use bld.bat
   script: python setup.py install  # [unix]
   # rsgislib not available due to mpfr only supporting vc14 and above
-  skip: True  # [win and py<35]
+  skip: True  # [(win and py<35) or (py>36)]
 
 requirements:
   host:
-    - python <=3.6
+    - python
   run:
-    - python <=3.6
+    - python
     - py6s
     - gdal
     - rsgislib 3.6.*
