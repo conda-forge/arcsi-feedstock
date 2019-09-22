@@ -23,7 +23,7 @@ requirements:
     - python
     - py6s
     - gdal
-    - rsgislib >= 4.0.0
+    - rsgislib >=4.0.0
     - rios
     - scikit-learn
     - python-fmask
