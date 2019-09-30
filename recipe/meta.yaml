@@ -5,7 +5,6 @@ package:
   version: {{ version }}
 
 source:
-  fn: arcsi-{{ version }}.tar.gz
   url: https://bitbucket.org/petebunting/arcsi/downloads/arcsi-{{ version }}.tar.gz
   sha256: 7d46e0d4af25d386d9e367d607fd3a8ca0a9a32830bc9039e530da5e3b582650
 
@@ -13,7 +12,7 @@ build:
   number: 1
   skip: True  # [win and py27]
   # Windows recipe includes .bat file copy so use bld.bat
-  script: python setup.py install  # [unix]
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
 
 requirements:
   host:
