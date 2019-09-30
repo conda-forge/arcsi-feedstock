@@ -1,29 +1,28 @@
-{% set version = "3.1.6" %}
+{% set version = "3.2.4" %}
 
 package:
   name: arcsi
   version: {{ version }}
 
 source:
-  fn: arcsi-{{ version }}.tar.gz
   url: https://bitbucket.org/petebunting/arcsi/downloads/arcsi-{{ version }}.tar.gz
-  sha256: 5a53e5e9b1769c41d28e2a6644d4add68c1c922d93a882bd69fa457a47cfb5d5
+  sha256: 7d46e0d4af25d386d9e367d607fd3a8ca0a9a32830bc9039e530da5e3b582650
 
 build:
-  number: 3
+  number: 1
+  skip: True  # [win and py27]
   # Windows recipe includes .bat file copy so use bld.bat
-  script: python setup.py install  # [unix]
-  # rsgislib not available due to mpfr only supporting vc14 and above
-  skip: True  # [(win and py<35) or (py>36)]
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
 
 requirements:
   host:
     - python
+    - pip
   run:
     - python
     - py6s
     - gdal
-    - rsgislib 3.6.*
+    - rsgislib >=4.0.0
     - rios
     - scikit-learn
     - python-fmask
