@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://www.arcsi.remotesensing.info
-  license: GPLv3
+  license: GPL-3.0-only
   license_file: LICENSE.txt
   summary: Software for the Atmospheric and Radiometric Correction of Satellite Imagery (ARCSI)
 
