@@ -1,12 +1,12 @@
-{% set version = "3.2.4" %}
+{% set version = "3.8.1" %}
 
 package:
   name: arcsi
   version: {{ version }}
 
 source:
-  url: https://bitbucket.org/petebunting/arcsi/downloads/arcsi-{{ version }}.tar.gz
-  sha256: 7d46e0d4af25d386d9e367d607fd3a8ca0a9a32830bc9039e530da5e3b582650
+  url: https://github.com/remotesensinginfo/arcsi/archive/v{{ version }}.tar.gz
+  sha256: 83b069487e363b26de6a2708256b55846e19a6a8a906086ac025152268208877
 
 build:
   number: 1
@@ -22,11 +22,12 @@ requirements:
     - python
     - py6s
     - gdal
-    - rsgislib >=4.0.0
+    - rsgislib >=4.1.0
     - rios
     - scikit-learn
     - python-fmask
     - h5py
+    - lightgbm
 
 test:
   imports:
