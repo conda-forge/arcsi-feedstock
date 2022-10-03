@@ -1,16 +1,16 @@
-{% set version = "3.8.1" %}
+{% set version = "4.0.0" %}
 
 package:
   name: arcsi
   version: {{ version }}
 
 source:
-  url: https://github.com/remotesensinginfo/arcsi/archive/v{{ version }}.tar.gz
-  sha256: 83b069487e363b26de6a2708256b55846e19a6a8a906086ac025152268208877
+  url: https://github.com/remotesensinginfo/arcsi/archive/refs/tags/{{ version }}.tar.gz
+  sha256: ff78ccbb4622c4ec59b66f0309d5716ba2c70b0b13b8df53e75909f27380ee2b
 
 build:
-  number: 2
-  skip: True  # [win and py27]
+  number: 0
+  skip: True  # [win]
   # Windows recipe includes .bat file copy so use bld.bat
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
 
@@ -22,7 +22,7 @@ requirements:
     - python
     - py6s
     - gdal
-    - rsgislib >=4.1.0
+    - rsgislib >=5.0
     - rios
     - scikit-learn
     - python-fmask
