@@ -5,8 +5,8 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://github.com/remotesensinginfo/arcsi.git
-  git_tag: main
+  url: https://github.com/remotesensinginfo/arcsi/archive/refs/tags/{{ version }}.tar.gz
+  sha256: ff78ccbb4622c4ec59b66f0309d5716ba2c70b0b13b8df53e75909f27380ee2b
 
 build:
   number: 0
