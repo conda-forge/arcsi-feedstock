@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win and py27]
+  skip: True  # [win]
   # Windows recipe includes .bat file copy so use bld.bat
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
 
