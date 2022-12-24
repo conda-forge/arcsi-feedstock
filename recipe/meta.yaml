@@ -1,4 +1,4 @@
-{% set version = "4.0.0" %}
+{% set version = "4.0.2" %}
 
 package:
   name: arcsi
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://github.com/remotesensinginfo/arcsi/archive/refs/tags/{{ version }}.tar.gz
-  sha256: ff78ccbb4622c4ec59b66f0309d5716ba2c70b0b13b8df53e75909f27380ee2b
+  sha256: 032515bbd5af03e2a6c698ad12b4fe4368c9b1bb0491615f614eab0c25614204
 
 build:
-  number: 1
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
   # Windows recipe includes .bat file copy so use bld.bat
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
 requirements:
   host:
