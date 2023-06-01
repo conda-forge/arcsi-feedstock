@@ -1,4 +1,4 @@
-{% set version = "4.0.3" %}
+{% set version = "4.0.4" %}
 
 package:
   name: arcsi
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/remotesensinginfo/arcsi/archive/refs/tags/{{ version }}.tar.gz
-  sha256: a986681db3e2d713067f9a3a8e68fadcd5183797f423ea8f0e3ebb08965a9d03
+  sha256: cbcc1b2f388e7d2ebd487639292c74f5ba1f40eec87f211f3ce8b100b1f35403
 
 build:
   number: 0
