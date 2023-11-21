@@ -9,7 +9,7 @@ source:
   sha256: cbcc1b2f388e7d2ebd487639292c74f5ba1f40eec87f211f3ce8b100b1f35403
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   # Windows recipe includes .bat file copy so use bld.bat
   script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
